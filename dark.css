@@ -104,14 +104,21 @@ td,
 }
 .message-row {
     padding: 0 0 0 32px;
-    background-color: #36393E;
+    background-color: #2F3136;
 }
 .line-start {
     background-color: #f8f8f8;
 }
+.group-header {
+    margin-top: 7px;
+}
 .message-sender {
     font-size: 14px;
 }
+.message-row.me {
+    background-color: #1d2328;
+}
+
 .unread-line-message,
 .message-sender {
     color: #f8f8f8 !important;
@@ -167,3 +174,6 @@ div[data-pendo="nav-item-selected"],
 .CodeBlock > span, code {
 	background-color: #2F3136 !important;
 }
+.activity-indicator.has-count {
+    background-color: #c30 !important;
+}  
