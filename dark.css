@@ -164,3 +164,6 @@ div[data-pendo="nav-item-selected"],
 .fuSkBg {
     background-color: #2F3136;
 }
+.CodeBlock > span, code {
+	background-color: #2F3136 !important;
+}
