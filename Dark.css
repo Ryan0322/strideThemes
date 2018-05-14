@@ -102,6 +102,8 @@ td,
     background-color: #2F3136 !important;
     color: #8CAEC1;
 }
+
+/* any message row */
 .message-row {
     padding: 0 0 0 32px;
     background-color: #2F3136;
@@ -109,12 +111,18 @@ td,
 .line-start {
     background-color: #f8f8f8;
 }
+
+/* starts a group of messages from either user */
 .group-header {
     margin-top: 7px;
 }
+
+/* name of message sender */
 .message-sender {
     font-size: 14px;
 }
+
+/* my message rows */
 .message-row.me {
     background-color: #1d2328;
 }
@@ -123,44 +131,61 @@ td,
 .message-sender {
     color: #f8f8f8 !important;
 }
+
+/* fixes chat section window width */
 .responsive.xlarge .message-list .infinite-scroll-content{
     padding-left: 0px;
     padding-right: 0px;
 }
 
+/* fixes chat section window width */
 .responsive.xlarge .conversation-header {
     padding-left: 0px;
     padding-right: 0px;
 }
 
+/* fixes chat section window width */
 .responsive.xlarge .chat-input-box {
     padding-left: 17px;
     padding-right: 7px;
 }
+
+/* chat input has default padding for the old width */
 .chat-input-wrapper {
-    padding-left: 0px; 
+    padding-left: 0px;
 }
+
+/* nav items */
 .nav-item {
-    margin: 5px 0 5px 0;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #A8BFBD
+    padding: 7px 0 7px 10px;
+    border-bottom: 1px solid #A8BFBD;
+	border-radius: 20px;
 }
+
+/* arrow to reset width of side nav section of the window */
 .gsOGuN {
     display: none;
 }
+
+/* line that says its a new day */
 .date-divider {
     background-color: #36393E;
     margin: 0 0 0 15px;
     padding: 10px 0 10px 20px;
 }
 
+/*  side nav items and the currently selected side nav item */
 div[data-pendo="nav-item-selected"],
-.nav-item:hover {
+div[data-pendo="nav-item-selected"] > span > span > div > div,
+.nav-item:hover,
+.nav-item:hover span > span > div > div {
     background-color: #404449 !important;
 }
 .chat-input-box {
     background-color: #484C52;
 }
+
+/*  '...' icon in the input bar menu background and formatting tips window background */
 .enCZZu,
 .kLRLgv,
 .dDMqft,
@@ -171,9 +196,53 @@ div[data-pendo="nav-item-selected"],
 .fuSkBg {
     background-color: #2F3136;
 }
+
+/*  code blocks */
 .CodeBlock > span, code {
 	background-color: #2F3136 !important;
 }
+
+/*  unread message indicator in side nav */
 .activity-indicator.has-count {
     background-color: #c30 !important;
-}  
+} 
+
+/*  edit message '...' icon was too tall, making the textbox jump up and down when you hovered the last message */
+.idLChA {
+	height: 20px;
+}
+
+/*  the X to close a chat in the side nav */
+.jfKqeX {
+	background-color: #404449;
+}
+
+/* fixes the 2 pixel gap in the x to close a chat in the side nav */
+
+.nav-item-close {
+	right: 0px;
+}
+
+.jfKqeX {
+    width: 25px;
+}
+/*  X in the side nav container div */
+.eaVGWA { 
+    margin: 0px;
+}
+
+.hbxRRE {
+	background:transparent;
+}
+.hbxRRE .wrapper {
+    background: transparent;
+}
+/* removes box around user icons in side nav  */
+.bOUELZ > div {
+	background: transparent;
+}
+
+/* anchor tag hyperlinks */
+.josSif {
+	text-decoration: underline;
+}
