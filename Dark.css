@@ -108,7 +108,7 @@ td,
   > div
   div
   button:hover {
-    background-color: #2F3136 !important;
+    background-color: #1d2328 !important;
     color: #8CAEC1;
 }
 
@@ -155,7 +155,7 @@ td,
 
 /* fixes chat section window width */
 .responsive.xlarge .chat-input-box {
-    padding-left: 17px;
+    padding-left: 25px;
     padding-right: 7px;
 }
 
@@ -168,7 +168,7 @@ td,
 .nav-item {
     padding: 7px 0 7px 10px;
     border-bottom: 1px solid #A8BFBD;
-	border-radius: 20px;
+	border-radius: 30px;
 }
 
 /* arrow to reset width of side nav section of the window */
@@ -189,8 +189,11 @@ div[data-pendo="nav-item-selected"],
 div[data-pendo="nav-item-selected"] > span > span > div > div,
 .nav-item:hover,
 .nav-item:hover span > span > div > div,
+/* container boxes inside nav items */
 .kpqxCV.kpqxCV:active,
-.drcGQh.drcGQh:active {
+.drcGQh.drcGQh:active,
+.drcGQh:hover,
+.kpqxCV {
     background-color: #404449 !important;
 }
 
@@ -270,4 +273,23 @@ div[data-pendo="nav-item-selected"] > span > span > div > div,
 /* fixes the wide box around activity indicator  */
 .gAehUA {
     min-width:inherit;
+}
+.cTpEIm, .gLmXil, .ggeOPV, .jaSyDq, .gihVRK, .jFmzxS {
+    background-color: #A8BFBD;
+}
+
+/* chat with a teammate name input box  */
+.mXjBZ,
+.mXjBZ:hover {
+    background-color: transparent !important;
+    border-color: #A8BFBD;
+}
+.gexPcd {
+    background-color: transparent
+}
+
+/* inline code */
+.code,
+.bYbXpE span { 
+    background-color: transparent !important;
 }
