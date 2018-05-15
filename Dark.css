@@ -1,3 +1,10 @@
+
+/* colors */
+/* #1d2328 - dark gray, my message rows */
+/* #A8BFBD - light gray, text color */
+/* #2F3136 - gray, background color */
+/* #404449 - light gray, active nav item */
+
 h1,
 h2,
 h3,
@@ -69,6 +76,8 @@ button[disabled='disabled'] {
 .message-body div span[data-mention-id] span {
     border-radius: 0;
 }
+
+/* idk what this does */
 .menu-item.active-tab > a,
 .aui-navgroup-vertical .aui-nav > li > a:focus,
 .aui-navgroup-vertical .aui-nav > li > a:
@@ -174,13 +183,25 @@ td,
     padding: 10px 0 10px 20px;
 }
 
+
 /*  side nav items and the currently selected side nav item */
 div[data-pendo="nav-item-selected"],
 div[data-pendo="nav-item-selected"] > span > span > div > div,
 .nav-item:hover,
-.nav-item:hover span > span > div > div {
+.nav-item:hover span > span > div > div,
+.kpqxCV.kpqxCV:active,
+.drcGQh.drcGQh:active {
     background-color: #404449 !important;
 }
+
+/* when you click a nav item it goes active and had a different color  */
+.kpqxCV.kpqxCV,
+.drcGQh.drcGQh,
+.kpqxCV.kpqxCV:active,
+.drcGQh.drcGQh:active {
+    width: 225px;
+}
+
 .chat-input-box {
     background-color: #484C52;
 }
@@ -200,6 +221,7 @@ div[data-pendo="nav-item-selected"] > span > span > div > div,
 /*  code blocks */
 .CodeBlock > span, code {
 	background-color: #2F3136 !important;
+    user-select: all;
 }
 
 /*  unread message indicator in side nav */
@@ -241,8 +263,11 @@ div[data-pendo="nav-item-selected"] > span > span > div > div,
 .bOUELZ > div {
 	background: transparent;
 }
-
 /* anchor tag hyperlinks */
 .josSif {
 	text-decoration: underline;
+}
+/* fixes the wide box around activity indicator  */
+.gAehUA {
+    min-width:inherit;
 }
