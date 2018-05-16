@@ -7,9 +7,7 @@
 /* #404449 - light gray, active nav item, scroll bar */
 /* #C1C7D0 - bright gray?, outline of chatbox and chat header divider */
 
-
-
-/* from original */
+/* from original ------------------------------------------------------------------------------------ */
 
 h1,
 h2,
@@ -261,7 +259,7 @@ div[data-pendo="nav-item-selected"] > span > span > div > div,
     background-color: transparent !important;
 }
 
-/*  edit message '...' icon was too tall, making the textbox jump up and down when you hovered the last message */
+/*  edit message '...' icon was too tall, making the textbox 'bounce' when you hovered the last message */
 .idLChA {
 	height: 20px;
 }
@@ -281,7 +279,7 @@ div[data-pendo="nav-item-selected"] > span > span > div > div,
 	background:transparent;
 }
 
-/* Other --------------------------------------------------------------------------------------------- */
+/* Other --------------------------------------------------------------------------------------------------- */
 
 /*  '...' icon in the input bar menu background and formatting tips window background */
 .enCZZu,
