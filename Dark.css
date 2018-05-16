@@ -1,9 +1,12 @@
 
 /* colors */
-/* #1d2328 - dark gray, my message rows */
+/* #1d2328 - dark gray, message rows */
 /* #A8BFBD - light gray, text color */
-/* #2F3136 - gray, background color */
-/* #404449 - light gray, active nav item */
+/* #2F3136 - gray, old background color */
+/* #0e0f0f - blackish, background color, my messages */
+/* #404449 - light gray, active nav item, scroll bar */
+/* #C1C7D0 - bright gray?, outline of chatbox and chat header divider */
+
 
 h1,
 h2,
@@ -67,7 +70,7 @@ button[disabled='disabled'] {
   > div
   div
   button {
-    background-color: #2F3136 !important;
+    background-color: #0e0f0f !important;
     box-shadow: none !important;
 }
 .message-body div code span {
@@ -115,7 +118,7 @@ td,
 /* any message row */
 .message-row {
     padding: 0 0 0 32px;
-    background-color: #2F3136;
+    background-color: #1d2328;
 }
 .line-start {
     background-color: #f8f8f8;
@@ -133,7 +136,7 @@ td,
 
 /* my message rows */
 .message-row.me {
-    background-color: #1d2328;
+    background-color: #0e0f0f;
 }
 
 .unread-line-message,
@@ -166,9 +169,11 @@ td,
 
 /* nav items */
 .nav-item {
-    padding: 7px 0 7px 10px;
+    padding: 7px 0 12px 10px;
+    margin-top: 2px;
     border-bottom: 1px solid #A8BFBD;
-	border-radius: 30px;
+    border-radius: 30px;
+    height: 30px;
 }
 
 /* arrow to reset width of side nav section of the window */
@@ -293,3 +298,44 @@ div[data-pendo="nav-item-selected"] > span > span > div > div,
 .bYbXpE span { 
     background-color: transparent !important;
 }
+
+/* scroll bar */
+.infinite-scroll-inner:hover::-webkit-scrollbar-thumb {
+    background: #404449;
+}
+
+/* chat header bottom border (name image etc) */
+.direct-conversation.conversation-header:after {
+	content: ""; /* This is necessary for the pseudo element to work. */ 
+	display: block; /* This will put the pseudo element on its own line. */
+	margin: 0 auto; /* This will center the border. */
+	width: 90%;
+	border-bottom: 2px solid #F4F5F7;
+}
+
+/* name in the header of chat */
+.direct-conversation-name {
+	color: #f8f8f8 !important;
+}
+
+
+/* for paul */
+/* .hOznOd {
+    border: none;
+}
+
+.hPPsOH:before,
+.hPPsOH:after {
+    background: transparent;
+}
+.direct-conversation.conversation-header:after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+	border-bottom: none !important;
+}
+
+form.chat-input-box {
+    padding: 6px 7px 6px 25px !important;
+} */
