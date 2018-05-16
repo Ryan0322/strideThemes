@@ -8,6 +8,9 @@
 /* #C1C7D0 - bright gray?, outline of chatbox and chat header divider */
 
 
+
+/* from original */
+
 h1,
 h2,
 h3,
@@ -115,56 +118,11 @@ td,
     color: #8CAEC1;
 }
 
-/* any message row */
-.message-row {
-    padding: 0 0 0 32px;
-    background-color: #1d2328;
-}
-.line-start {
-    background-color: #f8f8f8;
-}
+/* Side Nav --------------------------------------------------------------------------------------------- */
 
-/* starts a group of messages from either user */
-.group-header {
-    margin-top: 7px;
-}
-
-/* name of message sender */
-.message-sender {
-    font-size: 14px;
-}
-
-/* my message rows */
-.message-row.me {
-    background-color: #0e0f0f;
-}
-
-.unread-line-message,
-.message-sender {
-    color: #f8f8f8 !important;
-}
-
-/* fixes chat section window width */
-.responsive.xlarge .message-list .infinite-scroll-content{
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-/* fixes chat section window width */
-.responsive.xlarge .conversation-header {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-/* fixes chat section window width */
-.responsive.xlarge .chat-input-box {
-    padding-left: 25px;
-    padding-right: 7px;
-}
-
-/* chat input has default padding for the old width */
-.chat-input-wrapper {
-    padding-left: 0px;
+/*  unread message indicator in side nav */
+.activity-indicator.has-count {
+    background-color: #c30 !important;
 }
 
 /* nav items */
@@ -180,14 +138,6 @@ td,
 .gsOGuN {
     display: none;
 }
-
-/* line that says its a new day */
-.date-divider {
-    background-color: #36393E;
-    margin: 0 0 0 15px;
-    padding: 10px 0 10px 20px;
-}
-
 
 /*  side nav items and the currently selected side nav item */
 div[data-pendo="nav-item-selected"],
@@ -210,9 +160,128 @@ div[data-pendo="nav-item-selected"] > span > span > div > div,
     width: 225px;
 }
 
-.chat-input-box {
-    background-color: #484C52;
+
+/*  the X to close a chat in the side nav */
+.jfKqeX {
+	background-color: #404449;
+	 width: 25px;
 }
+
+/* fixes the 2 pixel gap in the x to close a chat in the side nav */
+.nav-item-close {
+	right: 0px;
+}
+
+
+/* Chat Section --------------------------------------------------------------------------------------------- */
+
+
+/* name in the header of chat */
+.direct-conversation-name {
+	color: #f8f8f8 !important;
+}
+
+/* chat header bottom border (name image etc) */
+.direct-conversation.conversation-header:after {
+	content: ""; /* This is necessary for the pseudo element to work. */ 
+	display: block; /* This will put the pseudo element on its own line. */
+	margin: 0 auto; /* This will center the border. */
+	width: 90%;
+	border-bottom: 2px solid #F4F5F7;
+}
+
+.line-start {
+    background-color: #f8f8f8;
+}
+
+/* starts a group of messages from either user */
+.group-header {
+    margin-top: 7px;
+}
+
+/* any message row */
+.message-row {
+    padding: 0 0 0 32px;
+    background-color: #1d2328;
+}
+
+/* name of message sender */
+.message-sender {
+    font-size: 14px;
+    color: #f8f8f8 !important;
+}
+
+/* my message rows */
+.message-row.me {
+    background-color: #0e0f0f;
+}
+
+.unread-line-message {
+    color: #f8f8f8 !important;
+}
+
+/* fixes chat section window width */
+.responsive.xlarge .message-list .infinite-scroll-content {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* fixes chat section window width */
+.responsive.xlarge .conversation-header {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* fixes chat section window width */
+.responsive.xlarge .chat-input-box {
+    padding: 6px 7px 6px 25px !important;
+}
+
+/* chat input has default padding for the old width */
+.chat-input-wrapper {
+    padding-left: 0px;
+}
+
+/* line that says its a new day */
+.date-divider {
+    background-color: #36393E;
+    margin: 0 0 0 15px;
+    padding: 10px 0 10px 20px;
+}
+
+/*  code blocks */
+.CodeBlock > span, code {
+	background-color: #2F3136 !important;
+    user-select: all;
+}
+
+/* inline code */
+.code,
+.bYbXpE span { 
+    background-color: transparent !important;
+}
+
+/*  edit message '...' icon was too tall, making the textbox jump up and down when you hovered the last message */
+.idLChA {
+	height: 20px;
+}
+
+/* user icons? idr */
+.cTpEIm, .gLmXil, .ggeOPV, .jaSyDq, .gihVRK, .jFmzxS {
+    background-color: #A8BFBD;
+}
+
+/* scroll bar */
+.infinite-scroll-inner:hover::-webkit-scrollbar-thumb {
+    background: #404449;
+}
+
+/* images */
+.hbxRRE, .hbxRRE .wrapper {
+	background:transparent;
+}
+
+/* Other --------------------------------------------------------------------------------------------- */
 
 /*  '...' icon in the input bar menu background and formatting tips window background */
 .enCZZu,
@@ -226,47 +295,11 @@ div[data-pendo="nav-item-selected"] > span > span > div > div,
     background-color: #2F3136;
 }
 
-/*  code blocks */
-.CodeBlock > span, code {
-	background-color: #2F3136 !important;
-    user-select: all;
-}
-
-/*  unread message indicator in side nav */
-.activity-indicator.has-count {
-    background-color: #c30 !important;
-} 
-
-/*  edit message '...' icon was too tall, making the textbox jump up and down when you hovered the last message */
-.idLChA {
-	height: 20px;
-}
-
-/*  the X to close a chat in the side nav */
-.jfKqeX {
-	background-color: #404449;
-}
-
-/* fixes the 2 pixel gap in the x to close a chat in the side nav */
-
-.nav-item-close {
-	right: 0px;
-}
-
-.jfKqeX {
-    width: 25px;
-}
 /*  X in the side nav container div */
 .eaVGWA { 
     margin: 0px;
 }
 
-.hbxRRE {
-	background:transparent;
-}
-.hbxRRE .wrapper {
-    background: transparent;
-}
 /* removes box around user icons in side nav  */
 .bOUELZ > div {
 	background: transparent;
@@ -279,8 +312,9 @@ div[data-pendo="nav-item-selected"] > span > span > div > div,
 .gAehUA {
     min-width:inherit;
 }
-.cTpEIm, .gLmXil, .ggeOPV, .jaSyDq, .gihVRK, .jFmzxS {
-    background-color: #A8BFBD;
+
+.gexPcd {
+    background-color: transparent
 }
 
 /* chat with a teammate name input box  */
@@ -289,39 +323,15 @@ div[data-pendo="nav-item-selected"] > span > span > div > div,
     background-color: transparent !important;
     border-color: #A8BFBD;
 }
-.gexPcd {
-    background-color: transparent
-}
 
-/* inline code */
-.code,
-.bYbXpE span { 
-    background-color: transparent !important;
-}
 
-/* scroll bar */
-.infinite-scroll-inner:hover::-webkit-scrollbar-thumb {
-    background: #404449;
-}
-
-/* chat header bottom border (name image etc) */
-.direct-conversation.conversation-header:after {
-	content: ""; /* This is necessary for the pseudo element to work. */ 
-	display: block; /* This will put the pseudo element on its own line. */
-	margin: 0 auto; /* This will center the border. */
-	width: 90%;
-	border-bottom: 2px solid #F4F5F7;
-}
-
-/* name in the header of chat */
-.direct-conversation-name {
-	color: #f8f8f8 !important;
-}
-
+/* OVERRIDES -------------------------------------------------------------------------------------------- */
 
 /* for paul */
+
 /* .hOznOd {
     border: none;
+	background-color: #1d2328;
 }
 
 .hPPsOH:before,
